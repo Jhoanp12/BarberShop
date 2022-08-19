@@ -1,0 +1,18 @@
+.home-img {
+  height: 250px;
+  width: 660px;
+  margin-left: 20%;
+  border-radius: 15px;
+}
+
+@media (min-width: 992px){
+.offset-lg-3 {
+    margin-left: 20%;
+}
+}
+@media (min-width: 992px){
+.col-lg-6 {
+    flex: 0 0 auto;
+    width: 59%;
+}
+}

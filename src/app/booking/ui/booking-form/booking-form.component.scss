@@ -1,0 +1,25 @@
+.card{
+  --bs-card-bg: #f8f9fa9c
+}
+.form-control.form-control-lg.mt-4 {
+  width: 80%;
+  margin-left: 10%;
+}
+
+select#inputGroupSelectHour {
+  width: 80%;
+  margin-top: 4%;
+  height: 35px;
+  border: 0px;
+  border-radius: 8px;
+}
+.btn-booking{
+background-color: red;
+font-size: 1.05rem;
+color: white;
+text-shadow: -1px 0px 0px #dee2e6;
+width: 38%;
+margin-bottom: 20px;
+border-radius: 20px;
+font-family: Lobster;
+}
