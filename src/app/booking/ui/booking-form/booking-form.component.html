@@ -3,12 +3,17 @@
     <div class="col-lg-6 offset-lg-3">
       <div class="card text-center">
         <div class="card-doby">
-          <form class="mt-4">
+          <form class="mt-4" (ngSubmit)="agregarReservation()" [formGroup]="createReservation">
             <h3 class="font2">Day and hour</h3>
-              <input type="text" class="form-control form-control-lg mt-4" placeholder="Service">
-              <input type="text" class="form-control form-control-lg mt-4 " placeholder="Barber">
-              <input type="date" class="form-control form-control-lg mt-4 " placeholder="Date">
-              <select class="custom-select" id="inputGroupSelectHour" placeholder= "Hour">
+            <span *ngIf="submitted && createReservation.invalid" class="badge bg-danger">TODOS LOS CAMPOS SON OBLIGATORIOS</span>
+              <input type="text" class="form-control form-control-lg mt-4"
+              formControlName="Service" placeholder="Service">
+              <input type="text" class="form-control form-control-lg mt-4 "
+              formControlName="Barber" placeholder="Barber">
+              <input type="date" class="form-control form-control-lg mt-4 "
+              formControlName="Date" placeholder="Date">
+              <select class="custom-select" id="inputGroupSelectHour"
+              formControlName="Hour" placeholder= "Hour">
                 <option selected placeholder="Hour"></option>
                 <option value="1">09:00</option>
                 <option value="2">09:30</option>
@@ -27,7 +32,7 @@
                 <option value="16">15:30</option>
                 <option value="17">16:00</option>
               </select>
-              <button type="button" class="btn btn-booking btn-sm mt-4">Schedule Apointment</button><br>
+              <button type="submit" class="btn btn-booking btn-sm mt-4">Schedule Apointment</button><br>
           </form>
         </div>
       </div>
