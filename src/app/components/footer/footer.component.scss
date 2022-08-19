@@ -1,0 +1,30 @@
+.app_footer {
+  &__container {
+    background-color: var(--color-neutral-n0);
+    border-top: 1px solid var(--color-neutral-n150);
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    font-family: var(--font-family-open-sans);
+    font-size: var(--font-size-footer);
+    height: 40px;
+    justify-content: center;
+    left: 0;
+    margin: 0;
+    margin: top 45px;;;
+    position: absolute;
+    width: 100vw;
+
+    &__textContainer {
+      align-items: center;
+      display: flex;
+      height: 32px;
+      justify-content: space-around;
+      margin: 0;
+      max-width: 320px;
+      min-width: 315px;
+      width: 35vw;
+
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.login-logo {
+  width: 20%;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center !important;
+  margin-left: 40%;
+}
+.form-control.form-control-lg.mt-4 {
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+}
+
+.card {
+  border-radius: 15px;
+  --bs-card-bg: #0404048f
+}
+
+.btn.btn-barber.btn-sm {
+  background-color: red;
+  font-size: 1.05rem;
+  color: white;
+  text-shadow: -1px 0px 0px #dee2e6;
+  width: 38%;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.span-barber {
+  color: white;
+}
+.a-barber {
+  color: #fd0d0d;
+  text-decoration: none;
+}
