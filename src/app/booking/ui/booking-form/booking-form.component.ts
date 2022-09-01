@@ -15,7 +15,7 @@ export class BookingFormComponent implements OnInit {
     this.createReservation = this.fb.group({
       Service: ['', Validators.required],
       Barber: ['', Validators.required],
-      Date: ['', Validators.required],
+      fecha: ['', Validators.required],
       Hour: ['', Validators.required],
     })
   }
@@ -30,11 +30,10 @@ export class BookingFormComponent implements OnInit {
     const reservation: any = {
       services: this.createReservation.value.Service,
       barber: this.createReservation.value.Barber,
-      date: this.createReservation.value.Data,
-      hour: this.createReservation.value.Hora,
-      fechaCreacion: new Date(),
-      fechaActualizacion: new Date()
+      fecha: this.createReservation.value.fecha,
+      hour: this.createReservation.value.Hour
     }
+    console.log(reservation);
     this.BookingService.createReservation(reservation).then(() => {
       console.log('Reserva registrada con exito');
     }).catch(error => {

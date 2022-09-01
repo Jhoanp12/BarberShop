@@ -31,14 +31,12 @@ export class RegisterComponent implements OnInit {
       user: this.createNewUser.value.user,
       password1: this.createNewUser.value.password1,
       password2: this.createNewUser.value.password2,
-      fechaCreacion: new Date(),
-      fechaActualizacion: new Date()
+
     }
     this.NewUserService.createNewUser(User).then(() => {
-      console.log('Reserva registrada con exito');
+      console.log('Usuario registrado con exito');
     }).catch(error => {
       console.log(error);
     })
   }
-
 }

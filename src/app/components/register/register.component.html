@@ -3,7 +3,7 @@
     <div class="col-lg-6 offset-lg-3">
       <div class="card text-center">
         <div class="card-doby">
-          <form class="mt-4" [formGroup]="createNewUser" (ngSubmit)="newUser()">
+          <form class="mt-4" [formGroup]="createNewUser">
             <img class="login-logo" src="../../../assets/img/logo.jpg" alt="Logo">
               <input type="email" class="form-control form-control-lg mt-4"
               formControlName="user" placeholder="User">
@@ -11,7 +11,7 @@
               formControlName="password1" placeholder="Password">
               <input type="password" class="form-control form-control-lg mt-4 "
               formControlName="password2"placeholder="Confirm password">
-              <button type="button" class="btn btn-barber btn-sm mt-4 ">Sign up</button><br>
+              <button type="button" class="btn btn-barber btn-sm mt-4" (click)="newUser()">Sign up</button><br>
           </form>
         </div>
       </div>
